@@ -1,25 +1,30 @@
 "use strict";
 
 var t= 0;
+var checkStart= 0;
 
-var timerNode= document.createTextNode("");
+var timerNode= document.createTextNode("0");
 var timer= document.createElement("p");
 timer.appendChild(timerNode);
 document.body.appendChild(timer);
 
 function time() {
   t++;
-  timerNode.innerHTML= "t";
+  timer.innerHTML= t;
 }
 
 function start() {
-  setInterval(time, 1000);
+  checkStart++;
+  if(checkStart == 1){
+    var interval= setInterval(time, 1000);
+  }
 }
 
-function stop(){
-  clearInrerval(time, 1000);
+function stop() {
+  clearInrerval(interval);
+  checkStart= 0;
 }
 
-//pause(){
-
-//}
+// //pause(){
+//
+// //}

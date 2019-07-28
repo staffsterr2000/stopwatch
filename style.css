@@ -3,10 +3,10 @@ button {
   float: left;
   min-height: 40px;
   background-image: linear-gradient(20deg, #22CCAA, #BA6C81);
-  color: #6140CA;
+  color: #5535CA;
   font-size: 120%;
   font-style: italic;
   font-family: "Times New Roman";
   font-weight: 700;
-  text-shadow: 1px 1px 5px #6140CA;
+  text-shadow: 1px 1px 5px #5535CA;
 }
